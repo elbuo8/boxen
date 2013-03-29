@@ -55,7 +55,12 @@ node default {
   include hub
   include nginx
   include nvm
-
+  include textmate::textmate2
+  include chrome
+  include iterm2::stable
+  include dropbox
+  include transmission
+  include vlc
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
     fail('Please enable full disk encryption and try again')
